@@ -22,7 +22,7 @@ export default class Jumpscare {
     activate() {
         document.getElementById("jumpscare-audio").play();
         document.getElementById("ambience").pause();
-        this.activated = true;
+        this.activated = false;
     }
     update() {
         this.row = (this.row + 1) % this.rows;
